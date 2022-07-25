@@ -1,0 +1,56 @@
+============ List of useful vscode extensions
+
+1. Auto Rename Tag
+2. Bracket Pair Colorizer 2
+3. ES7 React/Redux/GraphQL/React-Native snippets
+4. ESLint
+5. eslint-disable-snippets (optional)
+6. Highlight Matching Tag
+7. Import Cost (optional)
+8. IntelliSense for CSS class names in HTML (optional but advised)
+9. Material Icon Theme
+10. npm Intellisense
+11. Path Intellisense
+12. Prettier – Code formatter
+13. Toggle Quotes
+14. vscode-styled-components
+
+================== BELOW CONFIG IS FOR settings.json
+
+Press CTRL + P, type >settings, select Preferences Open Settings (JSON), update the config:
+
+{
+  // configure bash (only for Windows users)
+  "terminal.integrated.profiles.windows": {
+    "Git Bash": {
+      "path": "C:\\Program Files\\Git\\bin\\bash.exe",
+      "args": ["-l", "-i"]
+    }
+  },
+  "terminal.integrated.defaultProfile.windows": "Git Bash",
+  // PRETTIER
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // editor
+  "material-icon-theme.showWelcomeMessage": false,
+  "editor.fontLigatures": true,
+  "editor.fontWeight": "300",
+  "editor.tabSize": 2,
+  "editor.autoClosingQuotes": "always",
+  "editor.autoClosingBrackets": "always",
+  "editor.suggestSelection": "first",
+  "window.zoomLevel": 1,
+  "breadcrumbs.enabled": true,
+  "editor.rulers": [80],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  // theme
+  "material-icon-theme.folders.theme": "specific",
+  "material-icon-theme.activeIconPack": "react_redux",
+  "material-icon-theme.folders.color": "#ff7043",
+  "workbench.colorTheme": "Tomorrow Night Blue",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.tree.indent": 11
+}
