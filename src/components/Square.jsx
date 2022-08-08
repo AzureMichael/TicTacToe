@@ -1,9 +1,9 @@
 import React from "react";
 
-const Square = (props) => {
-    console.log(props);
+const Square = ({value, children}) => {
+    console.log({value, children});
     return (
-        <button type="button">{props.value}</button>
+        <button type="button">{value}</button>
     );
 }
 
